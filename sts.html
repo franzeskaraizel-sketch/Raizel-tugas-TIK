@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Canyon National Park (U.S. National Park Service)</title>
+  <link rel="stylesheet" href="sts.css">
+</head>
+    <body>
+        <!--Membuat Header-->
+        <div class="header">
+            <h1>TUGAS HTML & CSS</h1>
+        </div>
+        <!--Membuat Menu-->
+        <div class="topnav">
+                <a href="index.html">BIODATA</a>
+                <a href="table.html">TABLE</a>
+                <a href="list.html">LIST</a>
+                <a href="sts.html">STS</a>
+        </div>
+    <body>
+<body>
+    
+  <!-- Full Web Page Background Image -->
+  <img src="grand canyon background - Copy (2).jpg" alt="Website Background" class="page-background-img">
+
+  <!-- Official NPS Top Header Bar -->
+  <header class="nps-header">
+    <div class="nps-header-container">
+      <div class="nps-logo">
+        <span class="nps-arrowhead">▲</span>
+        <div class="nps-title-text">
+          <span class="nps-agency">National Park Service</span>
+          <span class="nps-dept">U.S. Department of the Interior</span>
+        </div>
+      </div>
+
+      <!-- YOUR HEADER SECTION -->
+      <div class="header-subtitle">
+        <h2>EXPLORE THE NATURAL WONDER</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner with Background Image Tag -->
+  <div class="hero-banner">
+    <img src="grand canyon.jpg" alt="Grand Canyon Hero" class="hero-bg-img">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <span class="hero-subtitle">WELCOME TO</span>
+      <h1>Grand Canyon</h1>
+      <p>National Park • Arizona</p>
+      
+      <!-- Big "Start Your Journey" Smooth Scroll Button -->
+      <a href="#main-content" class="start-journey-btn" onclick="scrollToJourney(event)">
+        START YOUR JOURNEY <span class="arrow">↓</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Park Alert Banner -->
+  <div class="nps-alert">
+    <span class="alert-icon">⚠️</span>
+    <p><strong>PARK ALERT:</strong> Check current weather, road closures, and trail conditions before visiting the North or South Rims.</p>
+  </div>
+
+  <main id="main-content">
+
+    <!-- WHAT IS GRAND CANYON SECTION -->
+<section class="what-is-canyon">
+  <div class="what-is-container">
+    
+    <!-- VIDEO WITH POP EFFECT -->
+    <div class="what-is-media">
+      <video class="what-is-video" autoplay loop muted playsinline>
+        <source src="ssstik.io_@ibtraveling5_1789361681239.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Text Block -->
+    <div class="what-is-text">
+      <h2>WHAT IS GRAND CANYON NATIONAL PARK?</h2>
+      <p>
+        Grand Canyon National Park, located in northwestern Arizona, encompasses one of the most remarkable and visually breathtaking natural landscapes on Earth. Designated as a U.S. National Park in 1919 and recognized as a UNESCO World Heritage Site in 1979, the Grand Canyon stretches roughly 277 miles (446 kilometers) in length, reaches up to 18 miles (29 kilometers) in width, and plummets to depths exceeding a mile (6,000 feet or 1,800 meters). This colossal geological abyss was sculpted over millions of years by the continuous erosion of the Colorado River, exposing nearly two billion years of Earth's geological history through its intricately layered bands of red, orange, and golden rock.
+      </p>
+      <p>
+        Beyond its iconic geological formations, the park preserves a vibrant and diverse ecosystem. Because of its dramatic elevation changes—ranging from the arid desert river basin to the forested heights of the North Rim—the Grand Canyon hosts several distinct ecological zones. It provides critical habitat for thousands of plant and animal species, including rare wildlife such as the California condor, desert bighorn sheep, mountain lions, and unique native desert flora.
+      </p>
+      <p>
+        The region also holds immense cultural and historical significance. For thousands of years, indigenous communities have inhabited and revered the canyon. Today, 11 Native American tribes maintain deep-rooted ancestral connections to the land, regarding the canyon as a sacred cultural birthplace and sanctuary. Archaeological sites, ancient rock art, and historic structures preserved throughout the park offer a glimpse into the long human history woven into this vast landscape.
+      </p>
+      <p>
+        Receiving millions of visitors every year, Grand Canyon National Park is a global hub for outdoor adventure and environmental education. Whether taking in panoramic views from South Rim overlooks, hiking down challenging inner-canyon trails, rafting the white-water rapids of the Colorado River, or observing the brilliant night skies, visitors encounter an extraordinary natural sanctuary that showcases the immense power of time, water, and geological forces.
+      </p>
+    </div>
+
+  </div>
+</section>
+    <!-- START YOUR JOURNEY SECTION -->
+    <section class="journey-container">
+      <div class="journey-header">
+        <h2>EXPLORE THE CANYON</h2>
+        <p>Choose your rim, plan your route, and explore one of the world's seven natural wonders.</p>
+      </div>
+
+      <div class="journey-cards">
+        <div class="journey-card">
+          <div class="journey-icon">📍</div>
+          <h3>South Rim</h3>
+          <p>Open year-round. Ideal for first-time visitors with iconic views and historic trails.</p>
+        </div>
+
+        <div class="journey-card">
+          <div class="journey-icon">🌲</div>
+          <h3>North Rim</h3>
+          <p>Higher elevation, wilder scenery, and fewer crowds. Open seasonally May to October.</p>
+        </div>
+
+        <div class="journey-card">
+          <div class="journey-icon">🎟️</div>
+          <h3>Passes & Permits</h3>
+          <p>Get digital entrance passes, backcountry permits, or campground reservations online.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Information Section -->
+    <section class="biodata-card">
+      <h2>Plan Your Visit <span>Grand Canyon, AZ</span></h2>
+      
+      <div class="biodata-content">
+        <!-- Hover Image Container -->
+        <div class="foto-container foto">
+          <img src="grand canyoon.jpg" alt="Grand Canyon Day" class="top foto-profil">
+          <img src="sunet canyot.jpg" alt="Grand Canyon Sunset" class="bottom foto-profil">
+        </div>
+
+        <!-- Information Details -->
+        <div class="data-diri">
+          <p><strong>Location:</strong> Northwestern Arizona, USA</p>
+          <p><strong>Canyon Length:</strong> 277 miles (446 km)</p>
+          <p><strong>Canyon Width:</strong> Up to 18 miles (29 km)</p>
+          <p><strong>Depth:</strong> Over 1 mile (6,000 feet / 1,800 meters)</p>
+          <p><strong>Carved By:</strong> The Colorado River over millions of years</p>
+          <p><strong>Associated Tribes:</strong> 11 Native Tribal Communities</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP DESTINATIONS SECTION -->
+<div class="section-title">
+  <span>TOP DESTINATIONS & RIMS</span>
+</div>
+
+<div class="carousel">
+  <!-- GRUP 1 -->
+  <div class="group">
+    <div class="card">
+      <img src="south rim.jpg" alt="South Rim">
+      <p class="b">Historic South Rim</p>
+    </div>
+    <div class="card">
+      <img src="desert watchtower.jpg" alt="Desert Watchtower">
+      <p class="b">Desert View Watchtower</p>
+    </div>
+    <div class="card">
+      <img src="horsehoue bend.jpg" alt="Horseshoe Bend">
+      <p class="b">Horseshoe Bend</p>
+    </div>
+    <div class="card">
+      <img src="north rim.jpg" alt="North Rim">
+      <p class="b">North Rim Overlook</p>
+    </div>
+    
+    <div class="card">
+      <img src="mather-point.jpg" alt="Mather Point">
+      <p class="b">Mather Point</p>
+    </div>
+
+    <div class="card">
+      <img src="animl.jpg" alt="Various Animals">
+      <p class="b">Various Animals</p>
+    </div>
+  </div>
+
+  <!-- GRUP 2 (DUPLIKASI PERSIS DARI GRUP 1 UNTUK INFINITE LOOP) -->
+  <div class="group" aria-hidden="true">
+    <div class="card">
+      <img src="south rim.jpg" alt="South Rim">
+      <p class="b">Historic South Rim</p>
+    </div>
+    <div class="card">
+      <img src="desert watchtower.jpg" alt="Desert Watchtower">
+      <p class="b">Desert View Watchtower</p>
+    </div>
+    <div class="card">
+      <img src="horsehoue bend.jpg" alt="Horseshoe Bend">
+      <p class="b">Horseshoe Bend</p>
+    </div>
+    <div class="card">
+      <img src="north rim.jpg" alt="North Rim">
+      <p class="b">North Rim Overlook</p>
+    </div>
+    <div class="card">
+      <img src="mather-point.jpg" alt="Mather Point">
+      <p class="b">Mather Point</p>
+    </div>
+
+    <div class="card">
+      <img src="animl.jpg" alt="Various Animals">
+      <p class="b">Various Animals</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+    <!-- 3D Flip Cards Section -->
+    <div class="section-title">
+      <span>PARK ACTIVITIES</span>
+    </div>
+
+    <div class="parent-container">
+      <div class="card2">
+        <div class="card-face card-face-front">
+          <img src="hike.jpg" alt="Rim & Canyon Trails">
+        </div>
+        <div class="card-face card-face-back">
+          <p class="b">Backcountry Hiking</p>
+        </div>
+      </div>
+
+      <div class="card2">
+        <div class="card-face card-face-front">
+          <img src="raft.jpg" alt="Colorado River Rafting">
+        </div>
+        <div class="card-face card-face-back">
+          <p class="b">Colorado River Rafting</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Preview Hover Card -->
+    <div class="section-title">
+      <span>PARK PREVIEW</span>
+    </div>
+
+    <div class="movie">
+      <img src="grand canyon.jpg" alt="Canyon Thumbnail" class="top">
+      <video class="bottom" autoplay loop muted>
+        <source src="YTDown.com_YouTube_Grand-Canyon-4K_Media_huqJUghX26Y_002_720p.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </main>
+
+  <!-- Official NPS Footer -->
+  <footer class="nps-footer">
+    <div class="footer-content">
+      <p><strong>Grand Canyon National Park</strong></p>
+      <p>P.O. Box 129, Grand Canyon, AZ 86023 | Phone: (928) 638-7888</p>
+      <p>&copy; Official Web Replica • National Park Service</p>
+      <p>&copy; Franzeska Raizel</p>
+    </div>
+  </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    function scrollToJourney(event) {
+      event.preventDefault();
+      const target = document.getElementById('main-content');
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+    <!--Membuat Footer-->
+        <footer class="footer">
+            <p>Franzeska Raizel</p>
+        </footer>
+</body>
+</html>

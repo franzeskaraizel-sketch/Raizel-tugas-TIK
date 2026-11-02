@@ -1,0 +1,738 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fff8ef;
+    font-family: 'Comfortaa', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #4f91c5;
+    padding: 16px;
+    margin-top: 24px;
+    text-align: center;
+    color: #ffffff;
+    border-top: 1px solid #3f7eae;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: #554c46;
+    border-bottom: 1px solid #eadfd3;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.topnav {
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #7bb3dc, #4f91c5);
+    border-bottom: 1px solid #3f7eae;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.topnav a {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s ease;
+}
+
+.topnav a:hover {
+   background-color: #d6eaff;
+   color: #2f6693;
+   border-bottom-color: #356f9f;
+}
+
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== FULL-PAGE BACKGROUND IMAGE TAG ===== */
+.page-background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+/* ===== OFFICIAL NPS BRANDING HEADER ===== */
+.nps-header {
+  background-color: #1c2b18;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-bottom: 4px solid #355e3b;
+  position: relative;
+  z-index: 5;
+}
+
+.nps-header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.nps-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nps-arrowhead {
+  font-size: 28px;
+  color: #d4a359;
+}
+
+.nps-title-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nps-agency {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.nps-dept {
+  font-size: 11px;
+  color: #cccccc;
+}
+
+/* ===== HERO BANNER WITH IMG BACKGROUND ===== */
+.hero-banner {
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #d4a359;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  font-style: italic;
+  color: #f0e6d2;
+  margin-bottom: 35px;
+}
+
+/* BIG "START YOUR JOURNEY" BUTTON */
+.start-journey-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #d4a359;
+  color: #1c2b18;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.start-journey-btn:hover {
+  background-color: #ffffff;
+  color: #1c2b18;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.start-journey-btn .arrow {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.start-journey-btn:hover .arrow {
+  transform: translateY(4px);
+}
+
+/* ===== PARK ALERT BAR ===== */
+.nps-alert {
+  position: relative;
+  z-index: 5;
+  background-color: #fff3cd;
+  color: #856404;
+  border-left: 6px solid #ffeba2;
+  border-bottom: 1px solid #ffe8a1;
+  width: 100%;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+/* ===== MAIN SECTION ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  padding: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+/* START YOUR JOURNEY CARDS */
+.journey-container {
+  width: 100%;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 35px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #d4a359;
+}
+
+.journey-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.journey-header h2 {
+  font-size: 28px;
+  color: #1c2b18;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.journey-header p {
+  color: #555555;
+  font-size: 16px;
+}
+
+.journey-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.journey-card {
+  background-color: #f9f9f6;
+  border: 1px solid #e0e0d8;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.journey-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.journey-card h3 {
+  font-size: 20px;
+  color: #1c2b18;
+  margin-bottom: 10px;
+}
+
+.journey-card p {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.5;
+}
+
+/* BIODATA / INFO CARD */
+.biodata-card {
+  width: 100%;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.biodata-card h2 {
+  font-size: 26px;
+  color: #1c2b18;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.biodata-card h2 span {
+  background-color: #355e3b;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.biodata-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  background-color: #f9f9f6;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e2e2dc;
+}
+
+/* HOVER FOTO CONTAINER */
+.foto-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 4px solid #1c2b18;
+  cursor: pointer;
+}
+
+.foto-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+
+.foto-container img.top {
+  z-index: 2;
+  opacity: 1;
+}
+
+.foto-container:hover img.top {
+  opacity: 0;
+}
+
+.foto-container img.bottom {
+  z-index: 1;
+}
+
+.data-diri {
+  flex: 1;
+  min-width: 250px;
+}
+
+.data-diri p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333333;
+}
+
+.data-diri strong {
+  color: #1c2b18;
+}
+
+/* SECTION TITLES */
+.section-title {
+  text-align: center;
+  margin: 35px 0 15px;
+  width: 100%;
+}
+
+.section-title span {
+  background-color: #1c2b18;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* ===== INFINITE CAROUSEL ANIMATION ===== */
+.carousel {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px; /* Jarak antara grup 1 dan grup 2 */
+  animation: spin 20s linear infinite; /* Kecepatan animasi (20 detik) */
+}
+
+/* Pause animasi saat cursor mouse diarahkan ke card (opsional) */
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
+.card {
+  flex: 0 0 200px;
+  height: 230px;
+  background-color: #f9f9f6;
+  border: 1px solid #dcdcd6;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Animasi menggeser persis panjang 1 grup (-100%) */
+@keyframes spin {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 3D FLIP CARDS */
+.parent-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card2 {
+  width: 200px;
+  height: 260px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+
+.card2:hover {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  border: 2px solid #1c2b18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-face-front {
+  background-color: #ffffff;
+}
+
+.card-face-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-face-back {
+  background-color: #1c2b18;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  padding: 10px;
+  text-align: center;
+}
+
+.card-face-back p.b {
+  color: #ffffff;
+}
+
+/* VIDEO HOVER CARD */
+.movie {
+  width: 100%;             /* Fills the full width of the main content container */
+  max-width: 800px;        /* Limits max width so it doesn't get overly large */
+  height: 450px;           /* Increased height to maintain a widescreen aspect ratio */
+  position: relative;
+  border: 3px solid #1c2b18;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.movie img, .movie video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;               /* Resets old offsets so media covers the full container */
+  transition: opacity 0.5s ease;
+}
+
+.movie img.top {
+  z-index: 2;
+  opacity: 1;
+}
+
+.movie video.bottom {
+  z-index: 1;
+  opacity: 0;
+}
+
+.movie:hover img.top {
+  opacity: 0;
+}
+
+.movie:hover video.bottom {
+  opacity: 1;
+}
+
+/* OFFICIAL FOOTER */
+.nps-footer {
+  position: relative;
+  z-index: 5;
+  background-color: #4f91c5;
+  color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 50px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 6px;
+}
+
+.nps-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-subtitle h2 {
+  font-size: 16px;
+  color: #d4a359; /* NPS Gold Accent */
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ===== WHAT IS GRAND CANYON SECTION ===== */
+.what-is-canyon {
+  width: 100%;
+  margin: 20px 0 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #1c2b18;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevents child elements from spilling out */
+}
+
+.what-is-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.what-is-video {
+  flex: 0 0 220px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #1c2b18;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.what-is-text {
+  flex: 1;
+  min-width: 0; /* Keeps text constrained within flexbox */
+}
+
+.what-is-text h2 {
+  font-size: 22px;
+  color: #1c2b18;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 6px;
+}
+
+.what-is-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* ===== VIDEO CONTAINER WITH POP EFFECT ===== */
+.what-is-media {
+  flex: 0 0 220px;
+  width: 220px;
+  border-radius: 8px;
+  border: 3px solid #1c2b18;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  
+  /* Smooth transition for pop effect */
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+.what-is-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover Effect: Pops up slightly */
+.what-is-media:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Click Effect: Presses down briefly when clicked */
+.what-is-media:active {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  text-indent: 30px;
+}
+
+/* Requirement 4: Paragraph Text Indent */
+.what-is-text p {
+  text-indent: 30px;
+}
+
+/* Requirement 7: Page Title Hover Effect (Color & Size Change) */
+.hero-content h1 {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.hero-content h1:hover {
+  color: #d4a359;          /* Changes color on hover */
+  transform: scale(1.08);   /* Increases size on hover */
+}
